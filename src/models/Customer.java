@@ -9,11 +9,9 @@ public class Customer {
     private String ort;
     private String lösenord;
 
-    // Tom konstruktor
     public Customer() {
     }
 
-    // Konstruktor med alla fält
     public Customer(int kundId, String förnamn, String efternamn, String adress,
                     String postnummer, String ort, String lösenord) {
         this.kundId = kundId;
@@ -25,7 +23,6 @@ public class Customer {
         this.lösenord = lösenord;
     }
 
-    // Getters och Setters
     public int getKundId() {
         return kundId;
     }

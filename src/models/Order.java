@@ -8,7 +8,6 @@ public class Order {
     private int kundId;
     private String status;
 
-
     public Order() {
     }
 
@@ -23,33 +22,37 @@ public class Order {
         return beställningId;
     }
 
-    public void setBeställningId(int beställningId){
+    public void setBeställningId(int beställningId) {
         this.beställningId = beställningId;
     }
 
     public LocalDateTime getDatum() {
         return datum;
     }
+
     public void setDatum(LocalDateTime datum) {
         this.datum = datum;
     }
+
     public int getKundId() {
         return kundId;
     }
+
     public void setKundId(int kundId) {
         this.kundId = kundId;
     }
+
     public String getStatus() {
         return status;
     }
+
     public void setStatus(String status) {
         this.status = status;
     }
+
     @Override
     public String toString() {
         return String.format("Beställning #%d - %s - Status: %s",
                 beställningId, datum, status);
     }
-
-
 }

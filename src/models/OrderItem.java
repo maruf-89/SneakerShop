@@ -1,7 +1,6 @@
 package models;
 
 public class OrderItem {
-
     private int beställningId;
     private int skoId;
     private int antal;
@@ -17,36 +16,41 @@ public class OrderItem {
         this.pris = pris;
     }
 
-    public int getBeställningId(){
+    public int getBeställningId() {
         return beställningId;
     }
-    public void setBeställningId(){
+
+    public void setBeställningId(int beställningId) {
         this.beställningId = beställningId;
     }
-    public int getSkoId(){
+
+    public int getSkoId() {
         return skoId;
     }
-    public void setSkoId(int skoId){
+
+    public void setSkoId(int skoId) {
         this.skoId = skoId;
     }
-    public int getAntal(){
+
+    public int getAntal() {
         return antal;
     }
-    public void setAntal(int antal){
+
+    public void setAntal(int antal) {
         this.antal = antal;
     }
-    public double getPris(){
+
+    public double getPris() {
         return pris;
     }
-    public void setPris(double pris){
+
+    public void setPris(double pris) {
         this.pris = pris;
     }
+
     @Override
     public String toString() {
-        return String.format("Produkt %d x %d á %.2f kr = %.2f kr",
+        return String.format("Produkt %d × %d á %.2f kr = %.2f kr",
                 skoId, antal, pris, (antal * pris));
     }
-
-
-
 }

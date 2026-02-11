@@ -1,7 +1,6 @@
 package models;
 
 public class Product {
-
     private int skoId;
     private String namn;
     private String färg;
@@ -10,7 +9,7 @@ public class Product {
     private int lagerAntal;
     private String märkeNamn;
 
-    public Product(){
+    public Product() {
     }
 
     public Product(int skoId, String namn, String färg, int storlek,
@@ -79,6 +78,7 @@ public class Product {
     public void setMärkeNamn(String märkeNamn) {
         this.märkeNamn = märkeNamn;
     }
+
     @Override
     public String toString() {
         return String.format("%s - %s - Storlek %d (%s) - %.2f kr - Lager: %d",
